@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemlogin.TicketController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="627.0" prefWidth="256.0" style="-fx-background-color: #0598FF;">
+         <children>
+            <Button layoutX="13.0" layoutY="567.0" mnemonicParsing="false" style="-fx-background-color: transparant;">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SIGN_OUT" size="15" />
+               </graphic>
+            </Button>
+            <Label layoutX="58.0" layoutY="566.0" text="Logout">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="welcomeLabel" layoutX="43.0" layoutY="147.0" text="Welcome">
+               <font>
+                  <Font name="Tahoma" size="23.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="USER" layoutX="84.0" layoutY="122.0" size="7em" />
+            <Button fx:id="payment" layoutX="35.0" layoutY="383.0" mnemonicParsing="false" onAction="#goPembayaran" prefHeight="35.0" prefWidth="180.0" text="    PEMBAYARAN " />
+            <Button layoutX="34.0" layoutY="277.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" text="HOME">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="15" />
+               </graphic>
+            </Button>
+            <FontAwesomeIconView glyphName="MONEY" layoutX="63.0" layoutY="405.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="loggedInUsername" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="164.0">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="47.166656494140625" layoutX="146.0" layoutY="207.0" startX="-100.0" />
+      <ImageView fitHeight="155.0" fitWidth="230.0" layoutX="274.0" layoutY="103.0" pickOnBounds="true">
+         <image>
+            <Image url="@../LogoSistemPemesanan/konser1.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="282.0" layoutY="267.0" text="KONSER COLDPLAY">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="437.0" layoutY="22.0" text="JELAJAHI ">
+         <font>
+            <Font name="Arial Black" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="TiketAvengers" layoutX="332.0" layoutY="297.0" mnemonicParsing="false" onAction="#BeliAvengers" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #000080;" text="BELI TIKET" textFill="#d48906">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="566.0" layoutY="267.0" text="FESTIVAL MUSIC">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="TiketHungerGames" layoutX="599.0" layoutY="299.0" mnemonicParsing="false" onAction="#beliHungerGames" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #000080;" text="BELI TIKET" textFill="#d48906">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="806.0" layoutY="267.0" text="KONSER ED SHEERAN">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="TiketGampangCuan" layoutX="863.0" layoutY="300.0" mnemonicParsing="false" onAction="#beliGampangCuan" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #000080;" text="BELI TIKET" textFill="#d48906">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="506.0" text="TIKET PESAWAT">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="TiketShangchi" layoutX="332.0" layoutY="544.0" mnemonicParsing="false" onAction="#BeliShangchi" prefHeight="17.0" prefWidth="115.0" style="-fx-background-color: #000080;" text="BELI TIKET" textFill="#d48906">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="578.0" layoutY="506.0" text="TIKET KERETA">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="TiketGatotKaca" layoutX="603.0" layoutY="544.0" mnemonicParsing="false" onAction="#beliGatotKaca" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #000080;" text="BELI TIKET" textFill="#d48906">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="859.0" layoutY="506.0" text="TIKET BUS">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="TiketKkn" layoutX="863.0" layoutY="544.0" mnemonicParsing="false" onAction="#beliKkn" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #000080;" text="BELI TIKET" textFill="#d48906">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="716.0" layoutY="22.0" text="ACARA">
+         <font>
+            <Font name="Arial Black" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="155.0" fitWidth="230.0" layoutX="542.0" layoutY="103.0" pickOnBounds="true">
+         <image>
+            <Image url="@../LogoSistemPemesanan/konser2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="230.0" layoutX="814.0" layoutY="103.0" pickOnBounds="true">
+         <image>
+            <Image url="@../LogoSistemPemesanan/konser3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="230.0" layoutX="276.0" layoutY="335.0" pickOnBounds="true">
+         <image>
+            <Image url="@../LogoSistemPemesanan/pesawat.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="230.0" layoutX="546.0" layoutY="335.0" pickOnBounds="true">
+         <image>
+            <Image url="@../LogoSistemPemesanan/kereta.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="230.0" layoutX="814.0" layoutY="335.0" pickOnBounds="true">
+         <image>
+            <Image url="@../LogoSistemPemesanan/bus.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
